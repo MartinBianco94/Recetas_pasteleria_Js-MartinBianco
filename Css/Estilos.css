@@ -1,0 +1,251 @@
+/*colores*/
+/*medidas de imagenes header*/
+* {
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Pacifico', cursive;
+  background-color: #f7dee2;
+  background-image: linear-gradient(#f7dee2, #f7dee2, #f7dee2, #ffffff); }
+
+/* INDEX */
+/* header index */
+header .primera-navbar img {
+  width: 100px; }
+
+header .primera-navbar .imagen-izquierda {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+header .primera-navbar .imagen-derecha {
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+header .primera-navbar .imagen-derecha img {
+  width: 40px; }
+
+header .primera-navbar .imagen-derecha .carrito {
+  width: 50px; }
+
+h2 {
+  font-size: 1.5rem;
+  color: #a0522d; }
+
+header .primera-navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+header .primera-navbar ul li a {
+  text-decoration: none;
+  font-size: 2.8rem;
+  color: #a0522d;
+  border-radius: 10%;
+  padding: 10px; }
+
+header .primera-navbar ul li a:hover {
+  background: #e7d4d4;
+  background-image: linear-gradient(#f7dee2, #f7dee2, #ffffff); }
+
+header .primera-navbar ul {
+  display: flex;
+  justify-content: space-around;
+  background-color: #f7dee2;
+  border-radius: 10%;
+  margin-top: 20px; }
+
+header .primera-navbar ul li .subcategoria {
+  display: flex;
+  flex-direction: column; }
+
+header .primera-navbar ul li .subcategoria {
+  position: absolute;
+  display: none; }
+
+header .primera-navbar ul li:hover > ul {
+  display: block; }
+
+/* main index */
+.main-index {
+  display: flex;
+  flex-direction: column;
+  margin-top: 60px;
+  font-size: 3rem;
+  align-items: center;
+  text-align: center; }
+
+main img {
+  width: 437px; }
+
+.boton a {
+  font-size: 3.5rem;
+  font-family: 'Pacifico', cursive;
+  text-decoration: none;
+  border-radius: 15%;
+  color: #a0522d;
+  background-color: #f7dee2;
+  padding: 1rem; }
+
+.boton a:hover {
+  background-color: #ffffff; }
+
+.texto-1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #a0522d; }
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: flex-end; }
+
+footer a img {
+  display: flex;
+  flex-direction: row;
+  width: 35px;
+  margin: 5px; }
+
+/* PRODUCTOS */
+/* main productos dulce */
+/* main productos salados */
+/* main productos todos */
+main h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: #a0522d; }
+
+.productos-dulces {
+  display: grid;
+  grid-template-columns: repeat(4, 0.5fr);
+  margin: 50px;
+  gap: 8rem; }
+
+.productos-dulces img {
+  width: 400px; }
+
+.productos-dulces h3 {
+  font-size: 3rem;
+  color: #a0522d; }
+
+.productos-dulces h4 {
+  font-size: 2.5rem; }
+
+.main-sweet-salty {
+  margin-top: 80px; }
+
+.main-sweet-salty h1 {
+  margin-bottom: 50px; }
+
+h5 {
+  font-size: 2.5rem;
+  color: #a0522d; }
+
+.card-img {
+  height: 280px; }
+
+.card p {
+  font-size: 2.5rem; }
+
+.btn {
+  font-size: 2.5rem; }
+
+.carousel-item {
+  height: 360px; }
+
+.container-fluid {
+  margin-top: 2px; }
+
+.carousel-item h5 {
+  font-size: 4rem;
+  color: #ffffff; }
+
+.carousel-item p {
+  font-size: 2.5rem;
+  color: #ffffff; }
+
+.pedido p{
+  font-size: 2rem;
+  color:#a0522d;
+  text-align: center;
+}
+
+/*TABLA DE PRECIOS*/
+.table {
+  font-size: 2rem;
+  color: #a0522d; 
+}
+
+/* RECETAS */
+.recetas-dulces {
+  display: grid;
+  grid-template-columns: repeat(2, 0.5fr);
+  align-items: center;
+  gap: 8rem; }
+
+.recetas-dulces img {
+  width: 800px;
+  border-radius: 5%; }
+
+.main-recetas ol {
+  font-size: 2rem;
+  color: #a0522d; }
+
+.main-recetas .texto-2 h2 {
+  font-size: 3rem; }
+
+
+/* CONTACTO */
+/* main contacto */
+.main-contacto {
+  display: flex;
+  justify-content: space-evenly; }
+
+.imagen-contacto {
+  text-align: center; }
+
+.imagen-contacto img {
+  width: 920px; }
+
+.imagen-contacto h2 {
+  font-size: 2.5rem; }
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  color: #a0522d;
+  background-color: #f7dee2;
+  background-image: linear-gradient(#f7dee2, #f7dee2, #f7dee2, #ffffff);
+  font-size: 2.3rem; }
+
+.formulario input {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #a0522d;
+  background-color: #f7dee2; }
+
+.formulario select {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #a0522d;
+  background-color: #f7dee2; }
+
+.formulario textarea {
+  font-size: 2rem;
+  font-family: 'Pacifico', cursive;
+  color: #a0522d; }
+
+/* PERFIL */ 
+/*main perfil */
+
+.formulario{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diario de una porción</title>
+    <meta name="description" content="Dulces, desayunos y meriendas tradicionales, todas adaptables a tus gustos y necesidades, ademas de algunas recetas fáciles para hacer en casa!">
+    <meta name="keywords" content="pasteleria artesanal, pasteleria vegana, pasteleria lomas de zamora, pasteleria turdera, desayunos saludables, desayunos sorpresa, desayunos artesanales, recetas faciles, recetas saludables, recetas dulces">
+    <link rel="stylesheet" href="./Css/Estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carattere&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./Images/logotipo_secundario.png" type="image/x-icon">
+    <title>Diario de una porción - Inicio</title>
+</head>
+<body>
+   <header>
+      <nav class="primera-navbar">
+         <div class="imagen-izquierda">
+            <img src="./Images/logotipo_secundario.png" alt="logotipo secundario">
+            <h2>Recetas y pastelería</h2>
+         </div>
+         <!-- Seccion complementaria 1: menú -->
+         <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Productos</a>
+                <ul class="subcategoria">
+                    <li><a href="./Pages/Dulce.html">Dulce</a></li>
+                    <li><a href="./Pages/Salado.html">Salado</a></li>
+                    <li><a href="./Pages/Desayunos.html">Desayuno</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Recetas</a>
+                <ul class="subcategoria">
+                    <li><a href="./Pages/Dulces.html">Dulces</a></li>
+                    <li><a href="./Pages/Saladas.html">Saladas</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Información</a>
+                <ul class="subcategoria">
+                    <li><a href="./Pages/Contacto.html">Contacto</a></li>
+                    <li><a href="./Pages/Como_realizar_mi_pedido.html">Como realizar mi pedido?</a></li>
+                    <li><a href="./Pages/No_llego_mi_pedido.html">No llego mi pedido</a></li>
+                </ul>
+            </li>
+         </ul>
+         <!-- Seccion complementaria 2: opciones de login y compras-->
+         <div class="imagen-derecha">
+           <a href="./Pages/Perfil.html"><img src="./Images/perfil.png" alt="perfil"></a>
+           <a href="./Pages/Carrito.html"><img class="carrito" src="./Images/carrito_de_compras.png" alt="carrito de compras"></a>
+         </div>
+      </nav> 
+   </header> 
+   <main>
+      <div class="main-index">
+        <img src="./Images/logotipo_primario.png" alt="logotipo primario">
+        <!-- Seccion complementaria 3: parrafo debajo del logo-->
+        <div class="texto-1">
+            <p data-aos="fade-down" data-aos-easing="linear"
+            data-aos-duration="1200">Buenas historias nacen con un buena comida, la mía dejo que la cuentes vos</p>
+        </div>
+        <!-- Seccion complementaria 4: boton hace tu pedido-->
+        <div class="boton">
+            <h3><a href="./Pages/Productos_todos.html" alt="Hacé tu pedido">Hacé tu pedido</a></h3>
+        </div>
+      </div>
+   </main>
+   <footer>
+        <a href="https://instagram.com/diariodeunaporcion?utm_medium=copy_link"><img src="./Images/instagram_logo.png" alt="instagram logo">
+        <a href="https://www.facebook.com/diariodeunaporcion/"><img src="./Images/facebook_logo.png" alt="facebook logo">
+        <a href="https://goo.gl/maps/gHgP9qhkgSUxZKaCA"><img src="./Images/google_maps.png" alt="ubicación">
+   </footer>
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
+  <script src="./Scripts/app.js"></script>
+  <script src="./Scripts/carrito.js"></script>
+</body>
+</html>
+
