@@ -1,15 +1,20 @@
-class Carrito {
-    constructor(lista) {
-        this.lista = lista
+/* Clase de carrito */
+export class Carrito {
+    constructor() {
+        this.lista = JSON.parse(localStorage.getItem("carrito")) || [];
+    }
+    createItem(item) {
+        this.lista.push(item)
+        localStorage.setItem( "carrito", JSON.stringify(this.lista));
     }
     findAllItems (){
-        return this.lista
+        return this.lista;
     }
     findoneByCdItem (itemCd){
         const item = this.lista.find(element => element.cd === itemCd);
 
         if (!item) {
-            throw new Error(" No existe el item cd: " + itemCd)
+            throw new Error(" No existe el item cd: " + itemCd);
         }
         return item;
     }
@@ -17,22 +22,12 @@ class Carrito {
         const item = this.findoneByCdItem (itemCd);
         const index = this.lista.indexOf ( item );
         this.lista.splice(index, 1);
+        localStorage.setItem( "carrito", JSON.stringify(this.lista));
 
     } 
 }
 
-const carrito = new Carrito(
-    [LemonPie,TortaBrownie,Talitas,PancitosSaborizados]
-)
 
-/* Comprobacion de los metodos */
 
-console.log(carrito.findAllItems())
-
-carrito.deleteItem(1)
-
-console.log(carrito.findAllItems())
-
-carrito.deleteItem(9)
 
 
