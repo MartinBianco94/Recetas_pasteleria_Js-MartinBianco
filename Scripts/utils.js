@@ -11,3 +11,4 @@ export const renderList = (listaId, lista) => {
         listaContainer.appendChild(itemList)
     }
 }
+

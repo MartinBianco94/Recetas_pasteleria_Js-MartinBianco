@@ -9,7 +9,7 @@ carrito.createItem(productos)
 
 renderList("productos-lista", productos)
 
-console.log(carrito.findAllItems)
+/*console.log(carrito.findAllItems)*/
 
 const formProducto =document.getElementById("form-producto")
 
@@ -20,16 +20,19 @@ const inputPrecioProducto =document.getElementById("input-precio-producto")
 const inputCdProducto =document.getElementById("input-cd-producto")
 
 
-formProducto.addEventListener("submit", () => {
+formProducto.addEventListener("submit",(e) => {
+    console.log(e);
+    e.preventDefault();
 
-    const nombre = inputNombreProducto.value
+    const nombre = inputNombreProducto.value;
 
-    const precio = inputPrecioProducto.value
+    const precio = inputPrecioProducto.value;
 
-    const cd = inputCdProducto.value
+    const cd = inputCdProducto.value;
 
-    const productoNuevo = new Producto (nombre,precio,cd)
+    const productoNuevo = new Producto (nombre,precio,cd);
 
-    carrito.createItem(productoNuevo)
+    carrito.createItem(productoNuevo);
+    console.log(productoNuevo);
 
 })

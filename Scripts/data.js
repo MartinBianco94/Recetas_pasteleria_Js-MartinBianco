@@ -31,7 +31,7 @@ const DesayunoSopresaNinos = new Producto("Desayuno Sorpresa Ninos",895,17,"../I
 const DesayunoSopresaCumpleanos = new Producto("Desayuno Sorpresa Cumpleanos",895,18,"../Images/desayuno_regalo_1.jpeg");
 const DesayunoSorpresaPersonalizado = new Producto("Desayuno sorpresa perzonalizado",895,19,"../Images/desayuno_regalo_3.jpg");
 
-/* Pusheo de nuevos items al carrito */
+/* Pusheo de nuevos items al carrito 
 productos.push(LemonPie)
 productos.push(Talitas)
-
+*/
