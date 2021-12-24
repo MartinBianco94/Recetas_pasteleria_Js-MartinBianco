@@ -12,3 +12,11 @@ export const renderList = (listaId, lista) => {
     }
 }
 
+/*boton de comprar*/
+
+let ButtonComprar = document.getElementById("buttonComprar")
+
+ButtonComprar.addEventListener("click",(e) => {
+    e.preventDefault();
+})
+
